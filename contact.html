@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="images/fav.png" />
+  <!-- <meta name="robots" content="index, follow"> -->
+  <meta name="format-detection" content="telephone=no">
+  <!--  googlefont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css" >
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.0.1/dist/css/yakuhanjp.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" >
+  
+  <title>プロダクト・リンクス｜プロモーションニーズに応える総合パートナー</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+</head>
+
+<body>
+  <header class="under-header">
+    <div class="header_inner">
+      <div class="logo obj-fit">
+        <a href="./"><img src="images/logo.svg" alt="PRODUCT LYNX"></a>
+      </div>
+      <div class="nav u-pc">
+        <ul>
+          <li><a href="./">HOME</a></li>
+          <li><a href="./#company">COMPANY</a></li>
+          <li><a href="./#services">SERVICES</a></li>
+          <li><a href="recruit.html">RECRUIT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="u-sp">
+        <div class="hamberger-wrap under-hum">
+          <div class="ham-inner">
+            <div class="hambager-content">
+              <button type="button" class="hambager">
+                <span class="c-line"></span>
+                <span class="c-line"></span>
+                <span class="c-line"></span>
+              </button>
+            </div><!-- /.hambager-content -->
+            <p class="ham-txt">MENU</p>
+          </div>
+        </div><!-- hamberger-wrap -->
+      </div>
+    </div>
+  </header>
+
+  <div class="mega-menu">
+    <div class="mega-menu_inner">
+      <div class="nav-area">
+        <nav>
+          <ul>
+            <li><a href="./">HOME</a></li>
+            <li><a href="index.html#company">COMPANY</a></li>
+            <li><a href="index.html#services">SERVICES</a></li>
+            <li><a href="recruit.html">RECRUIT</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.nav-area -->
+      <div class="tel">
+        <a href="tel:06-6366-6665"><img src="images/icon-tel_b.svg" alt="">06-6366-6665</a>
+        <p>受付時間：10:00〜19:00  / 定休日：土日・祝日</p>
+      </div><!--/.tel -->
+      <div class="contact">
+        <p>メールでのお問い合わせはこちらから</p>
+        <div class="btn_wrap"><a href="contact.html">CONTACT FORM</a></div>
+      </div><!-- /.contact -->
+    </div><!-- /.mega-menu_inner -->
+  </div><!-- /.mega-menu -->
+
+  <main>
+    <div class="under-fv">
+      <div class="inner">
+        <p>CONTACT</p>
+        <h1>問い合わせ</h1>
+      </div>
+    </div>
+
+    <div class="breadcrumb">
+      <div class="inner">
+        <nav>
+          <ol>
+            <li>
+              <a href="/">HOME</a>
+            </li>
+            <li>CONTACT</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section class="p-under p-contact">
+      <div class="inner">
+        <h2>ご依頼・お問い合わせはこちらから</h2>
+        <p>
+          プロダクト・リンクスへの業務依頼や採用に関するお問い合わせは、下記フォームよりお気軽にご連絡ください。私たちのサービスに関するご質問やご相談にも迅速に対応させていただきます。
+        </p>
+        <div class="form-wrap">
+          <form action="mail.php" method="post" enctype="multipart/form-data">
+            <table>
+              <tr>
+                <th><label for="form_company">会社名</label></th>
+                <td>
+                  <input type="text" id="form_company" name="会社名" required>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="form_tantou">担当者名</label></th>
+                <td>
+                  <input type="text" id="form_tantou" name="担当者名" required>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="form_mail">メールアドレス</label></th>
+                <td>
+                  <input type="email" id="form_mail" name="メールアドレス" required>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="form_tel">電話番号</label></th>
+                <td>
+                  <input type="tel" id="form_tel" name="電話番号" required>
+                </td>
+              </tr>
+              <tr>
+                <th><label>問い合わせ区分</label></th>
+                <td class="radio">
+                  <label for="radio_01"><input id="radio_01" type="radio" name="問い合わせ区分" value="案件依頼" required>案件依頼</label>
+                  <label for="radio_02"><input id="radio_02" type="radio" name="問い合わせ区分" value="見積もり">見積もり</label>
+                  <label for="radio_03"><input id="radio_03" type="radio" name="問い合わせ区分" value="相談">相談</label>
+                  <label for="radio_04"><input id="radio_04" type="radio" name="問い合わせ区分" value="採用について">採用について</label>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="form_textarea">問い合わせ内容</label></th>
+                <td>
+                  <textarea name="問い合わせ内容" id="form_textarea" cols="30" rows="10" maxlength="500"></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="btn_wrap grade_btn"><input type="submit" value="送信する" name="送信" /></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.2989975897676!2d135.50266917588698!3d34.69763777292084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6e9c86a9a91%3A0x5f955332312b48e6!2z44CSNTMwLTAwNDcg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy66KW_5aSp5rqA77yU5LiB55uu77yU4oiS77yR77yYIOaiheODtuaeneS4reWkruODk-ODqyA4Zg!5e0!3m2!1sja!2sjp!4v1724829020636!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div><!-- /.footer-left -->
+    <div class="footer-right">
+      <div class="inner">
+        <h3>CONTACT</h3>
+        <p class="txt">
+          イベント・マーケティング・屋外広告<br>
+          ラジオ番組・映像制作のことでお困りなら<br>
+          プロダクト・リンクスにお任せください。
+        </p>
+        <div class="tel">
+          <a href="tel:06-6366-6665"><img src="images/icon-tel.svg" alt="">06-6366-6665</a>
+          <p>受付時間：10:00〜19:00  / 定休日：土日・祝日</p>
+        </div><!--/.tel -->
+        <div class="contact">
+          <p>メールでのお問い合わせはこちらから</p>
+          <div class="btn_wrap white_btn"><a class="grade" href="contact.html">CONTACT FORM</a></div>
+        </div><!-- /.contact -->
+        <a class="policy" href="./policy" target="_blank">個人情報保護方針</a>
+        <p><small>© 2024 Product Lynx Co., LTD.</small></p>
+      </div>
+    </div><!-- /.footer-right -->
+  </footer>
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script>
+    // https://github.com/protonet/jquery.inview /で対応
+    $('.scroll').on('inview', function () { // .sxrollが表示されたら
+      $(this).addClass('active'); //処理を記述
+    });
+  </script>
+</body>
+
+</html>

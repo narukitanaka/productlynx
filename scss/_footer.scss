@@ -1,0 +1,130 @@
+@use "variable"as v;
+@use "common"as c;
+/*************************************************
+footer
+*************************************************/
+footer {
+  position: sticky;
+  top: 100%;
+  display: flex;
+  @include c.mq() {
+    display: block;
+  }
+  .footer-left,.footer-right {
+    flex-basis: 50%;
+  }
+  .footer-left {
+    .map-wrap {
+      width: 100%;
+      height: 100%;
+      @include c.mq() {
+        aspect-ratio: 1/.6;
+      }
+    }
+  }
+  .footer-right {
+    padding: 5.7rem 11rem 2.7rem 5.6rem;
+    background: linear-gradient(90deg, #44769E 0%, #68A797 100%);
+    @include c.mq() {
+      padding: 4rem 0;
+    }
+    .inner {
+      max-width: 59rem;
+    }
+    h3,p,a {
+      color: #fff;
+    }
+    h3 {
+      font-family: v.$ttl-font;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 4px;
+      margin-bottom: 4.7rem;
+      @include c.mq() {
+        font-size: 1.5rem;
+        @include c.mq() {
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+    .txt {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.7;
+      letter-spacing: 4px;
+      padding-bottom: 3.7rem;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 4.9rem;
+      @include c.mq() {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        line-height: 2;
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+    .tel {
+      margin-bottom: 3.2rem;
+      a {
+        display: flex;
+        gap: 1rem;
+        font-family: v.$ttl-font;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 3.1rem;
+        margin-bottom: 1rem;
+        @include c.mq() {
+          justify-content: center;
+        }
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        @include c.mq() {
+          font-size: 1.3rem;
+          text-align: center;
+        }
+      }
+    }
+    .contact {
+      margin-bottom: 6.8rem;
+      p {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        @include c.mq() {
+          text-align: center;
+          letter-spacing: 1px;
+        }
+      }
+    }
+    .policy {
+      position: relative;
+      display: block;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      font-weight: 300;
+      padding-left: 1.5rem;
+      margin-bottom: 1.7rem;
+      &::before {
+        content: "";
+        width: 6px;
+        aspect-ratio: 1/2;
+        background: url(../images/icon-arrow.svg) no-repeat center/contain;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+    }
+    p {
+      small {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+      }
+    }
+  }
+}
