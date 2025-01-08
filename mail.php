@@ -38,6 +38,7 @@ $site_top = "http://www.product-lynx.jp/";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
 $to = "info@product-lynx.jp";
+// $to = "register@g-hill.jp";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "メールアドレス";
@@ -526,7 +527,7 @@ function postToMail($arr){
 			$out = zenkaku2hankaku($key,$out,$hankaku_array);
 		}
 		
-		if($out != "confirm_submit" && $key != "httpReferer" && $key != "upfilePath" && $key != "upfileType") {
+		if($out != "confirm_submit" && $key != "httpReferer" && $key != "upfilePath" && $key != "upfileType" && $key != "送信") {
 			
 			if($key == "upfileOriginName" && $out !=''){
 				$key = '添付ファイル';

@@ -813,7 +813,7 @@ footer .footer-right p small {
 .under-fv {
   width: 100%;
   height: 25.8rem;
-  background: var(--logo_grad, linear-gradient(90deg, #44769E 0%, #68A797 100%));
+  background: var(--logo_grad, linear-gradient(90deg, #44769e 0%, #68a797 100%));
   padding-top: 9rem;
   margin-top: 10rem;
 }
@@ -826,7 +826,8 @@ footer .footer-right p small {
     margin-top: 6rem;
   }
 }
-.under-fv p, .under-fv h1 {
+.under-fv p,
+.under-fv h1 {
   color: #fff;
 }
 .under-fv p {
@@ -963,8 +964,8 @@ footer .footer-right p small {
   margin-bottom: 4rem;
   padding-bottom: 2rem;
   border-bottom: 4px solid #44769E;
-  -o-border-image: linear-gradient(90deg, #44769E 0%, #68A797 100%) 1;
-     border-image: linear-gradient(90deg, #44769E 0%, #68A797 100%) 1;
+  -o-border-image: linear-gradient(90deg, #44769e 0%, #68a797 100%) 1;
+     border-image: linear-gradient(90deg, #44769e 0%, #68a797 100%) 1;
 }
 @media screen and (max-width: 768px) {
   .p-works .brock h2 {
@@ -998,7 +999,8 @@ footer .footer-right p small {
     padding-top: 0;
   }
 }
-.p-works .brock .box .left h3, .p-works .brock .box .left p {
+.p-works .brock .box .left h3,
+.p-works .brock .box .left p {
   max-width: 49rem;
 }
 .p-works .brock .box .left h3 {
@@ -1080,13 +1082,15 @@ footer .footer-right p small {
 .p-recruit table tr:nth-of-type(2n) {
   background-color: #f5f5f5;
 }
-.p-recruit table tr th, .p-recruit table tr td {
+.p-recruit table tr th,
+.p-recruit table tr td {
   font-size: 1.8rem;
   line-height: 1.7;
   padding: 4rem 2rem;
 }
 @media screen and (max-width: 768px) {
-  .p-recruit table tr th, .p-recruit table tr td {
+  .p-recruit table tr th,
+  .p-recruit table tr td {
     display: block;
   }
 }
@@ -1157,11 +1161,18 @@ footer .footer-right p small {
   width: 100%;
   margin-bottom: 4rem;
 }
-.p-contact .form-wrap table tr th, .p-contact .form-wrap table tr td {
+@media screen and (max-width: 768px) {
+  .p-contact .form-wrap table {
+    margin-bottom: 2rem;
+  }
+}
+.p-contact .form-wrap table tr th,
+.p-contact .form-wrap table tr td {
   padding: 1.5rem 0;
 }
 @media screen and (max-width: 768px) {
-  .p-contact .form-wrap table tr th, .p-contact .form-wrap table tr td {
+  .p-contact .form-wrap table tr th,
+  .p-contact .form-wrap table tr td {
     display: block;
   }
 }
@@ -1182,7 +1193,8 @@ footer .footer-right p small {
     padding-top: 0;
   }
 }
-.p-contact .form-wrap table tr td input, .p-contact .form-wrap table tr td textarea {
+.p-contact .form-wrap table tr td input,
+.p-contact .form-wrap table tr td textarea {
   width: 100%;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -1221,8 +1233,49 @@ footer .footer-right p small {
     flex-wrap: wrap;
   }
 }
+.p-contact .form-wrap .accept {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .p-contact .form-wrap .accept {
+    margin-bottom: 4rem;
+  }
+}
+.p-contact .form-wrap .accept .accept-txt {
+  width: 75%;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .p-contact .form-wrap .accept .accept-txt {
+    width: 100%;
+  }
+}
+.p-contact .form-wrap .accept label {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .p-contact .form-wrap .accept label {
+    width: 100%;
+  }
+}
+.p-contact .form-wrap .accept label p {
+  margin-bottom: 0;
+}
+.p-contact .form-wrap .accept label p a {
+  color: #44769e;
+  text-decoration: underline;
+}
 .p-contact .form-wrap .btn_wrap {
   margin: 0 auto;
+}
+.p-contact .form-wrap .btn_wrap:hover input {
+  color: #44769e;
 }
 .p-contact .form-wrap .btn_wrap input {
   width: 100%;
@@ -1231,10 +1284,10 @@ footer .footer-right p small {
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-family: YakuHanJP, "Hiragino Kaku Gothic Std", sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.15em;
   font-weight: 700;
+  transition: all 0.3s;
 }
 
 /*************************************************
